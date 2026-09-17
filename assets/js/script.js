@@ -1,16 +1,15 @@
 /* =========================================================
    MARIAGE MARIE & CLÉMENT — PERSONNALISATION
-   Modifiez les valeurs ci-dessous en priorité.
    ========================================================= */
 const WEDDING = {
   date: "2027-04-16T14:30:00+02:00",
-  // À MODIFIER : adresse e-mail qui recevra les RSVP.
-  rsvpEmail: "votre-adresse@email.fr",
+  //adresse e-mail qui recevra les RSVP.
+  rsvpEmail: "acino@free.fr",
   address: "12 chemin des Jardins, 60500 Chantilly, France",
   event: {
     title: "Mariage de Marie & Clément",
-    start: "20270416T143000",
-    end: "20270417T020000",
+    start: "20270416T160000",
+    end: "20270417T030000",
     location: "Le Domaine des Étoiles, 12 chemin des Jardins, 60500 Chantilly, France"
   }
 };
@@ -145,47 +144,3 @@ document.addEventListener("keydown", e => {
   if (e.key === "ArrowRight") moveGallery(1);
 });
 
-// ---------- Musique d'ambiance sans fichier externe ----------
-// Le navigateur exige une interaction avant de jouer un son.
-// Cette petite mélodie est générée localement par Web Audio.
-let audioContext = null;
-let musicTimer = null;
-let musicOn = false;
-let melodyIndex = 0;
-const melody = [261.63, 329.63, 392.00, 329.63, 293.66, 349.23, 440.00, 349.23];
-
-function playNote(freq, duration=.7) {
-  if (!audioContext) audioContext = new (window.AudioContext || window.webkitAudioContext)();
-  const osc = audioContext.createOscillator();
-  const gain = audioContext.createGain();
-  osc.type = "sine";
-  osc.frequency.value = freq;
-  gain.gain.setValueAtTime(.0001, audioContext.currentTime);
-  gain.gain.exponentialRampToValueAtTime(.035, audioContext.currentTime + .05);
-  gain.gain.exponentialRampToValueAtTime(.0001, audioContext.currentTime + duration);
-  osc.connect(gain).connect(audioContext.destination);
-  osc.start();
-  osc.stop(audioContext.currentTime + duration + .05);
-}
-function startMusic() {
-  if (musicOn) return;
-  musicOn = true;
-  const tick = () => {
-    if (!musicOn) return;
-    playNote(melody[melodyIndex % melody.length], .75);
-    melodyIndex++;
-  };
-  tick();
-  musicTimer = setInterval(tick, 900);
-  document.getElementById("musicNotice")?.classList.add("hidden");
-  document.getElementById("musicButton").textContent = "♫";
-}
-function stopMusic() {
-  musicOn = false;
-  clearInterval(musicTimer);
-  musicTimer = null;
-  document.getElementById("musicButton").textContent = "♪";
-}
-document.getElementById("musicStart")?.addEventListener("click", startMusic);
-document.getElementById("musicClose")?.addEventListener("click", () => document.getElementById("musicNotice")?.classList.add("hidden"));
-document.getElementById("musicButton")?.addEventListener("click", () => musicOn ? stopMusic() : startMusic());
