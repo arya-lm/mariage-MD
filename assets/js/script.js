@@ -2,7 +2,7 @@
    MARIAGE MARIE & CLÉMENT — PERSONNALISATION
    ========================================================= */
 const WEDDING = {
-  date: "2027-04-16T14:30:00+02:00",
+  date: "2026-04-16T14:30:00+02:00",
   //adresse e-mail qui recevra les RSVP.
   rsvpEmail: "acino@free.fr",
   address: "12 chemin des Jardins, 60500 Chantilly, France",
