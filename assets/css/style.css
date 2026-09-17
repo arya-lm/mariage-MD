@@ -1,6 +1,6 @@
 :root {
   --ivory:#f5f0e8; --paper:#fffdf9; --ink:#2d2a27; --muted:#746d65;
-  --line:#ded3c6; --sage:#7c8575; --sage-dark:#566052; --gold:#b49668;
+  --line:#ded3c6; --sage:#6e7d96; --sage-dark:#4a4f66; --gold:#b49668;
   --gold-light:#e1ceb0; --shadow:0 24px 70px rgba(55,45,34,.12);
   --serif:"Cormorant Garamond",Georgia,serif; --sans:"Montserrat",Arial,sans-serif;
 }
@@ -10,8 +10,7 @@ body.no-scroll{overflow:hidden} a{color:inherit} button,input,select,textarea{fo
 .site-header{position:sticky;top:0;z-index:20;display:flex;justify-content:space-between;align-items:center;padding:18px 5vw;background:rgba(255,253,249,.94);backdrop-filter:blur(12px);border-bottom:1px solid rgba(222,211,198,.8)}
 .brand{text-decoration:none;font:600 1.55rem/1 var(--serif);letter-spacing:.04em}.brand span,footer span{color:var(--gold);font-style:italic}
 .nav{display:flex;gap:24px}.nav a{text-decoration:none;font-size:.65rem;letter-spacing:.1em;text-transform:uppercase}.nav a:hover{color:var(--sage-dark)}
-.menu-toggle,.music-button{display:none;background:none;border:0;cursor:pointer;color:var(--ink)}.music-button{font-size:1.1rem}
-.music-notice{position:fixed;z-index:50;right:20px;bottom:20px;display:flex;align-items:center;gap:12px;background:rgba(45,42,39,.95);color:#fff;padding:11px 14px;box-shadow:var(--shadow);font-size:.67rem;transition:.3s}.music-notice.hidden{opacity:0;pointer-events:none;transform:translateY(10px)}.music-notice button{border:1px solid rgba(255,255,255,.5);background:transparent;color:#fff;padding:6px 10px;cursor:pointer;font-size:.62rem;text-transform:uppercase;letter-spacing:.1em}.music-notice #musicClose{border:0;font-size:1.2rem;padding:0}
+.menu-toggle,
 .hero{min-height:calc(100vh - 92px);position:relative;display:grid;place-items:center;text-align:center;color:#fff;overflow:hidden;background:radial-gradient(circle at 50% 38%,rgba(255,255,255,.2),transparent 25%),linear-gradient(135deg,#777c6c,#4d554c 55%,#363d38)}
 .hero:before,.hero:after{content:"";position:absolute;border:1px solid rgba(255,255,255,.28);border-radius:50%}.hero:before{width:55vw;height:55vw}.hero:after{width:38vw;height:38vw}
 .hero-overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,24,21,.12),rgba(20,24,21,.45))}
