@@ -13,11 +13,6 @@
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-  <div id="musicNotice" class="music-notice" role="status" aria-live="polite">
-    <span>♪ Une petite musique pour accompagner votre visite</span>
-    <button id="musicStart" type="button">Écouter</button>
-    <button id="musicClose" type="button" aria-label="Fermer">×</button>
-  </div>
 
   <div class="announcement">16 AVRIL 2027 · MARIE & CLÉMENT · NOUS ALLONS NOUS DIRE OUI</div>
 
@@ -33,7 +28,6 @@
       <a href="#infos">Infos</a>
       <a href="#rsvp">RSVP</a>
     </nav>
-    <button class="music-button" id="musicButton" type="button" aria-label="Activer ou couper la musique">♪</button>
   </header>
 
   <main>
@@ -49,7 +43,6 @@
           <button class="button button-ghost" id="heroCalendar" type="button">Ajouter au calendrier</button>
         </div>
       </div>
-      <div class="scroll-hint">↓ <span>faire défiler</span></div>
     </section>
 
     <section class="section invitation" id="invitation">
@@ -113,7 +106,7 @@
           <span class="placeholder-content"><b>PHOTO 04</b><small>Votre photo ici</small></span>
         </button>
       </div>
-      <p class="gallery-tip">Astuce : privilégiez des images JPG ou WebP d'environ 1600 px de large.</p>
+      <p class="gallery-tip">Text s'il faut.</p>
     </section>
 
     <section class="section story-timeline" aria-label="Chronologie de notre histoire">
@@ -121,8 +114,8 @@
       <h2 class="center">Avant le grand jour</h2>
       <div class="milestones">
         <!-- À MODIFIER : dates et souvenirs -->
-        <article class="milestone reveal"><span>2019</span><h3>La rencontre</h3><p>Le début d'une histoire que nous ne savions pas encore si belle.</p></article>
-        <article class="milestone reveal"><span>2021</span><h3>Notre premier grand voyage</h3><p>Des valises, des fous rires et la certitude d'aimer voyager ensemble.</p></article>
+        <article class="milestone reveal"><span>2016</span><h3>La rencontre</h3><p>Le début de notre histoire </p></article>
+        <article class="milestone reveal"><span>2018</span><h3>Notre premier grand voyage</h3><p>Des valises, des fous rires et la certitude d'aimer voyager ensemble.</p></article>
         <article class="milestone reveal"><span>2025</span><h3>Le grand « oui »</h3><p>Une question, une réponse et un nouveau projet à deux.</p></article>
         <article class="milestone reveal"><span>2027</span><h3>Le mariage</h3><p>Et maintenant, le moment de faire la fête avec vous.</p></article>
       </div>
@@ -132,9 +125,10 @@
       <p class="eyebrow center">Le programme</p>
       <h2 class="center">Une journée à savourer</h2>
       <div class="timeline">
-        <article class="timeline-item reveal"><span class="time">14:30</span><div><h3>Cérémonie</h3><p>Rendez-vous pour partager notre « oui » et quelques émotions.</p></div></article>
-        <article class="timeline-item reveal"><span class="time">16:00</span><div><h3>Félicitations & cocktail</h3><p>Un verre, quelques bulles et beaucoup de retrouvailles.</p></div></article>
-        <article class="timeline-item reveal"><span class="time">19:30</span><div><h3>Dîner</h3><p>Une table généreuse, des toasts et des souvenirs à créer.</p></div></article>
+        <article class="timeline-item reveal"><span class="time">16:00</span><div><h3>Cérémonie du thé</h3><p>Rendez-vous pour partager notre « oui » et quelques émotions.</p></div></article>
+        <article class="timeline-item reveal"><span class="time">17:30</span><div><h3>Cérémonie laïque</h3><p>Improvisation de nos témoins</p></div></article>
+        <article class="timeline-item reveal"><span class="time">18:30</span><div><h3>Félicitations & cocktail</h3><p>Un verre, quelques bulles et beaucoup de retrouvailles.</p></div></article>
+        <article class="timeline-item reveal"><span class="time">20:00</span><div><h3>Dîner</h3><p>Une table généreuse, des toasts et des souvenirs à créer.</p></div></article>
         <article class="timeline-item reveal"><span class="time">23:00</span><div><h3>La fête</h3><p>Musique, danse et probablement quelques chaussures abandonnées.</p></div></article>
       </div>
       <p class="small-note center">Les horaires sont indicatifs et pourront être ajustés avant le grand jour.</p>
@@ -159,24 +153,25 @@
       <p class="eyebrow center">Infos pratiques</p>
       <h2 class="center">Tout ce qu'il faut savoir</h2>
       <div class="info-grid">
-        <article class="info-card"><span>01</span><h3>Tenue</h3><p>Élégante et confortable : venez comme vous aimez être beau pour une grande fête.</p></article>
-        <article class="info-card"><span>02</span><h3>Hébergement</h3><p>Quelques adresses seront ajoutées ici prochainement pour dormir à proximité.</p></article>
-        <article class="info-card"><span>03</span><h3>Enfants</h3><p>Les petits invités sont les bienvenus. Un espace dédié sera prévu pendant la soirée.</p></article>
-        <article class="info-card"><span>04</span><h3>Cadeaux</h3><p>Votre présence est déjà un merveilleux cadeau. Si vous le souhaitez, une cagnotte sera bientôt indiquée ici.</p></article>
+        <article class="info-card"><span>01</span><h3>Hébergement</h3><p>Quelques adresses seront ajoutées ici prochainement pour dormir à proximité.</p></article>
+        <article class="info-card"><span>02</span><h3>Enfants</h3><p>Les petits invités sont les bienvenus. Un espace dédié sera prévu pendant la soirée.</p></article>
+        <article class="info-card"><span>03</span><h3>Cadeaux</h3><p>Votre présence est déjà un merveilleux cadeau. Si vous le souhaitez, une liste de souhaits/cadeaux sera bientôt indiquée ici.</p></article>
       </div>
 
       <div class="practical-panels">
         <details open>
           <summary>🚗 Venir en voiture</summary>
-          <p>À personnaliser avec vos indications de parking, accès et covoiturage.</p>
+          <p>Suivez l'adresse du château, un parking est disponible sur place. Du covoiturage pourra être organisé par nos chers témoins.</p>
         </details>
         <details>
           <summary>🚆 Venir en train</summary>
-          <p>À personnaliser avec la gare recommandée et les éventuelles navettes.</p>
+          <p>La gare la plus proche est la gare de Chantilly accessible via la ligne P. N'hésitez pas à nous contacter à l'avance pour organiser des navettes entre le château et la gare.</p>
         </details>
         <details>
           <summary>🏨 Où dormir ?</summary>
-          <p>À personnaliser avec 3 à 5 hébergements proches et vos recommandations.</p>
+          <p>- Le château</p>
+          <p>- La grange</p>
+          <p>- La maison d'hôtes</p>
         </details>
       </div>
     </section>
@@ -185,7 +180,7 @@
       <div class="rsvp-inner">
         <p class="eyebrow center">Réponse souhaitée</p>
         <h2 class="center">Serez-vous des nôtres ?</h2>
-        <p class="center narrow">Merci de nous confirmer votre présence avant le <strong>15 janvier 2027</strong>. Le formulaire prépare automatiquement un e-mail : rien n'est envoyé sans votre validation.</p>
+        <p class="center narrow">Merci de nous confirmer votre présence avant le <strong>15 Novembre 2026</strong>. Le formulaire prépare automatiquement un e-mail : rien n'est envoyé sans votre validation.</p>
         <form id="rsvpForm" class="rsvp-form">
           <label>Prénom et nom<input name="name" required placeholder="Marie Dupont"></label>
           <label>Votre réponse<select name="attendance" required><option value="">Choisir…</option><option>Oui, avec grand plaisir !</option><option>Non, malheureusement</option></select></label>
@@ -203,7 +198,6 @@
       <p>Nous avons hâte de vous retrouver pour célébrer cette journée avec vous.</p>
       <div class="final-actions">
         <button class="button" id="calendarButton" type="button">Ajouter au calendrier</button>
-        <a class="button button-outline" href="#top">Revenir en haut ↑</a>
       </div>
     </section>
   </main>
